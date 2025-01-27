@@ -21,7 +21,6 @@ export class FaceSnapComponent implements OnInit {
 
   snapButtonText!: string; // Texte affiché sur le bouton de "Snap".
   userHasSnapped!: boolean; // État indiquant si l'utilisateur a déjà "snappé" (true) ou non (false).
-  myPrice: number = 336.75;
 
   ngOnInit(): void {
     // Initialisation des propriétés lors du cycle de vie du composant.

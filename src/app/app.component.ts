@@ -15,28 +15,27 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.faceSnaps = [
       new FaceSnap(
-        'Face Snap',
-        'This is a simple face snap application',
-        'https://cdn.pixabay.com/photo/2024/12/03/08/08/ai-generated-9241538_1280.jpg',
-        new Date(),
-        5
-      ),
-      new FaceSnap(
-        'My Other Snap',
-        'This is a simple face snap application',
-        'https://cdn.pixabay.com/photo/2019/09/11/16/09/artificial-intelligence-4469138_1280.jpg',
+        'Archibald',
+        'Mon meilleur ami depuis toujours !',
+        'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
         new Date(),
         10
       ),
       new FaceSnap(
-        'My Last Snap',
-        'This is a simple face snap application',
-        'https://cdn.pixabay.com/photo/2018/03/15/10/35/website-3227784_1280.jpg',
+        'Three Rock Mountain',
+        'Un endroit magnifique pour les randonnées.',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Three_Rock_Mountain_Southern_Tor.jpg/2880px-Three_Rock_Mountain_Southern_Tor.jpg',
+        new Date(),
+        6
+      ),
+      new FaceSnap(
+        'Un bon repas',
+        "Mmmh que c'est bon !",
+        'https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg',
         new Date(),
         156
       ),
     ];
-
-    this.faceSnaps[1].setLocation('A Dakar');
+    this.faceSnaps[1].setLocation('à la montagne');
   }
 }

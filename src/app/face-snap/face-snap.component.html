@@ -1,5 +1,5 @@
-<div class="face-snap-card">
-  <h2>{{ faceSnap.title }}</h2>
+<div class="face-snap-card" [ngClass]="{ snapped: userHasSnapped }">
+  <h2>{{ faceSnap.title | titlecase }}</h2>
   @if (faceSnap.location) {
   <p>Localisation: {{ faceSnap.location }}</p>
   } @else {

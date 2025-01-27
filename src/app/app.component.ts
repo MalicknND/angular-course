@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
         'This is a simple face snap application',
         'https://cdn.pixabay.com/photo/2018/03/15/10/35/website-3227784_1280.jpg',
         new Date(),
-        15
+        156
       ),
     ];
 

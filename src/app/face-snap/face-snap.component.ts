@@ -38,14 +38,14 @@ export class FaceSnapComponent implements OnInit {
 
   unSnap() {
     // Méthode pour annuler un snap.
-    this.faceSnap.removeSnap(); // Appelle une méthode du modèle pour décrémenter le nombre de snaps.
+    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'unsnap'); // Appelle un service pour décrémenter le nombre de snaps.
     this.snapButtonText = 'Oh snap!'; // Met à jour le texte du bouton.
     this.userHasSnapped = false; // Met à jour l'état pour indiquer que l'utilisateur n'a pas "snappé".
   }
 
   snap() {
     // Méthode pour ajouter un snap.
-    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id); // Appelle un service pour incrémenter le nombre de snaps.
+    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'snap'); // Appelle un service pour incrémenter le nombre de snaps.
     this.snapButtonText = 'Oops Unsnap'; // Met à jour le texte du bouton.
     this.userHasSnapped = true; // Met à jour l'état pour indiquer que l'utilisateur a "snappé".
   }

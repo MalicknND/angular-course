@@ -1,5 +1,7 @@
 // Premiere methode
 
+import type { SnapType } from './snap-type.type';
+
 /*
 export class FaceSnap {
     title: string;
@@ -39,6 +41,14 @@ export class FaceSnap {
 
   removeSnap(): void {
     this.snaps--;
+  }
+
+  snap(snapType: SnapType): void {
+    if (snapType === 'snap') {
+      this.addSnap();
+    } else if (snapType === 'unsnap') {
+      this.removeSnap();
+    }
   }
 
   setLocation(location: string): void {

@@ -1,6 +1,7 @@
 import { Component, Input, type OnInit } from '@angular/core'; // Importation des décorateurs, types et interfaces nécessaires pour créer un composant Angular.
-import type { FaceSnap } from '../models/face-snap'; // Importation du modèle FaceSnap pour typer les données.
+import { FaceSnap } from '../models/face-snap'; // Importation du modèle FaceSnap pour typer les données.
 import { DatePipe, NgClass, NgStyle, UpperCasePipe } from '@angular/common';
+import { FaceSnapsService } from '../services/face-snaps.service';
 
 @Component({
   selector: 'app-face-snap', // Définit le sélecteur HTML utilisé pour insérer ce composant dans une page.
@@ -15,6 +16,8 @@ export class FaceSnapComponent implements OnInit {
 
   snapButtonText!: string; // Texte affiché sur le bouton de "Snap".
   userHasSnapped!: boolean; // État indiquant si l'utilisateur a déjà "snappé" (true) ou non (false).
+
+  constructor(private faceSnapsService: FaceSnapsService) {} // Constructeur du composant.
 
   ngOnInit(): void {
     // Initialisation des propriétés lors du cycle de vie du composant.
@@ -42,7 +45,7 @@ export class FaceSnapComponent implements OnInit {
 
   snap() {
     // Méthode pour ajouter un snap.
-    this.faceSnap.addSnap(); // Appelle une méthode du modèle pour incrémenter le nombre de snaps.
+    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id); // Appelle un service pour incrémenter le nombre de snaps.
     this.snapButtonText = 'Oops Unsnap'; // Met à jour le texte du bouton.
     this.userHasSnapped = true; // Met à jour l'état pour indiquer que l'utilisateur a "snappé".
   }

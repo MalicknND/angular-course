@@ -42,4 +42,4 @@ L'application se rechargera automatiquement si vous modifiez les fichiers source
 Pour plus d'aide sur Angular CLI :
 - Utilisez `ng help`
 - Consultez la [documentation Angular CLI](https://angular.io/cli)
-- Suivez le cours sur [OpenClassrooms](https://openclassrooms.com)
+- Suivez le cours sur [OpenClassrooms](https://arc.net/l/quote/idjdgehn)

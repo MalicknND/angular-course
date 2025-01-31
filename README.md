@@ -1,27 +1,45 @@
 # Snapface
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+Ce projet est réalisé dans le cadre du cours OpenClassrooms "Débutez avec Angular". Il s'agit d'une application permettant de mettre en pratique les concepts fondamentaux d'Angular.
 
-## Development server
+## Objectifs pédagogiques
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+À la fin de ce cours, vous serez capable de :
+- Créer une application Angular
+- Construire des components Angular
+- Structurer un document avec les directives
+- Modifier l'affichage des données avec les pipes
+- Améliorer la structure de votre application avec les services et le routing
 
-## Code scaffolding
+## Concepts couverts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Dans ce projet, vous apprendrez à :
+- Utiliser les briques de base d'une application Angular (components)
+- Passer des données aux components avec la liaison de données
+- Réagir aux événements du template avec la liaison par événement
+- Structurer et mettre en forme les components avec le control flow, les directives et les pipes
+- Implémenter des services et du routing pour améliorer la structure de l'application
 
-## Build
+## Installation et démarrage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clonez ce repository `git clone https://github.com/MalicknND/angular-course.git`
+2. Installez les dépendances avec `npm install`
+3. Lancez le serveur de développement avec `ng serve`
+4. Naviguez vers `http://localhost:4200/`
 
-## Running unit tests
+L'application se rechargera automatiquement si vous modifiez les fichiers source.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Commandes utiles
 
-## Running end-to-end tests
+- `ng serve` - Lance le serveur de développement
+- `ng generate component component-name` - Génère un nouveau composant
+- `ng build` - Compile l'application
+- `ng test` - Execute les tests unitaires
+- `ng e2e` - Execute les tests end-to-end
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Aide supplémentaire
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour plus d'aide sur Angular CLI :
+- Utilisez `ng help`
+- Consultez la [documentation Angular CLI](https://angular.io/cli)
+- Suivez le cours sur [OpenClassrooms](https://openclassrooms.com)
